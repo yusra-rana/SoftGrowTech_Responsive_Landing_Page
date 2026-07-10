@@ -1,0 +1,169 @@
+/* ==========================================
+   RESPONSIVE CSS
+   File: responsive.css
+========================================== */
+
+/* ===========================
+   TABLETS (991px)
+=========================== */
+
+@media (max-width:991px){
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+    }
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        margin:60px auto;
+    }
+
+    .hero-text h1{
+        font-size:2.8rem;
+    }
+
+    .cake-container,
+    .features-container,
+    .seller-container,
+    .review-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .contact-info{
+        text-align:center;
+    }
+
+}
+
+
+/* ===========================
+   MOBILE (768px)
+=========================== */
+
+@media (max-width:768px){
+
+    nav{
+        padding:15px 0;
+    }
+
+    .logo{
+        font-size:1.8rem;
+    }
+
+    nav ul{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .btn{
+        padding:10px 22px;
+    }
+
+    .hero{
+        gap:40px;
+    }
+
+    .hero-text h1{
+        font-size:2.3rem;
+    }
+
+    .hero-text p{
+        font-size:1rem;
+    }
+
+    .hero-btn{
+        padding:12px 28px;
+    }
+
+    #cakes h2,
+    #why-us h2,
+    #best-sellers h2,
+    #about h2,
+    #reviews h2,
+    #contact h2{
+        font-size:2rem;
+    }
+
+    .cake-container,
+    .features-container,
+    .seller-container,
+    .review-container{
+        grid-template-columns:1fr;
+    }
+
+    .cake-card,
+    .feature-card,
+    .seller-card,
+    .review-card{
+        margin:auto;
+        max-width:400px;
+    }
+
+}
+
+
+/* ===========================
+   SMALL MOBILE (480px)
+=========================== */
+
+@media (max-width:480px){
+
+    body{
+        font-size:15px;
+    }
+
+    .logo{
+        font-size:1.5rem;
+    }
+
+    .hero{
+        width:95%;
+    }
+
+    .hero-text h1{
+        font-size:2rem;
+    }
+
+    .hero-text p{
+        font-size:.95rem;
+    }
+
+    .hero-btn,
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .cake-card,
+    .feature-card,
+    .seller-card,
+    .review-card{
+        padding:20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button{
+        width:100%;
+    }
+
+    footer{
+        padding:20px;
+        font-size:.9rem;
+    }
+
+}
